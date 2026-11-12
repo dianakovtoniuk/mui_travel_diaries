@@ -18,4 +18,12 @@ const unwrap = async (request) => {
 
 export const getAllPosts = () => unwrap(api.get("/posts"));
 
+export const sendAuthRequest = (isSignup, { name, email, password }) =>
+  unwrap(
+    api.post(
+      `/user/${isSignup ? "signup" : "login"}`,
+      isSignup ? { name, email, password } : { email, password }
+    )
+  );
+
 export const postDelete = (id) => unwrap(api.delete(`/posts/${id}`));
