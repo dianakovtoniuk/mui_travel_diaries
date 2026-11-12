@@ -1,4 +1,4 @@
-# Travel Diaries (MERN)
+# Travel Diaries with MUI
 
 Share travel diaries with photos, location and date. Users sign up, log in, and can add, edit and delete their own diaries; everyone can browse all diaries.
 
