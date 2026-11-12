@@ -12,6 +12,8 @@ const guestLinks = [
 const userLinks = [
   { label: "Home", to: "/" },
   { label: "Diaries", to: "/diaries" },
+  { label: "Add", to: "/add" },
+  { label: "Profile", to: "/profile" },
 ];
 
 const Header = () => {
